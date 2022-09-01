@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+.item , .item_2{
+    position: relative;
+}
+
+.drop , .drop_2{
+    position: absolute;
+}
+
+.item_3{
+    position: relative;
+    left: 220px;
+    top: -60px;
+}
+
+.box_left{
+    float: left;
+}
+
+.box_right{
+    float: right;
+}
+
+.display_none{
+    display: none;
+}
+
+.menu::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.link_2_block::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.link {
+    display: block;
+    width: 160px;
+    padding: 20px;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: beige;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link_2_block{
+    padding: 20px 15px 20px 30px;
+    width: 220px;
+    background-color: rgb(255, 255, 118);
+    border: none;
+    cursor: pointer;
+}
+
+.border{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.link_2{
+    display: block;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: none;
+}
+
+.link_3{
+    display: block;
+    width: 120px;
+    padding: 20px;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: rgb(255, 255, 0);
+    text-decoration: none;
+}
+
+.item:hover .link{
+    background-color: rgb(214, 214, 188);
+}
+
+.item:hover .drop{
+    display: block;
+}
+
+.item_2:hover .link_2_block{
+    background-color: rgb(197, 197, 90);
+}
+
+.item_2:hover .drop_2{
+    display: block;
+}
+
+.item_3:hover .link_3{
+    background-color: rgb(212, 212, 0);
+}
